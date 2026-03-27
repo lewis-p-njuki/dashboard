@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<canvas id="chart"></canvas>
+
+<script>
+const ctx = document.getElementById('chart');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Mon', 'Tue', 'Wed'],
+    datasets: [{
+      label: 'Bookings',
+      data: [3, 7, 5]
+    }]
+  }
+});
+</script>
+
+</body>
+</html>
